@@ -6,40 +6,17 @@
 }
 
 body {
+    min-height: 100vh;
     background: #3c3c3c;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .hexagon {
     position: relative;
-    width: 60px;
-    height: 100px;
-    background: #000;
-}
-
-.hexagon:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -30px;
-    width: 0px;
-    height: 0px;
-    border-right: 30px solid #000;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-}
-
-.hexagon:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -30px;
-    width: 0px;
-    height: 0px;
-    border-left: 30px solid #000;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
+    width: 100px;
+    height: 110px;
+    background: #111;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
